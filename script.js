@@ -81,30 +81,20 @@ let box3 = document.querySelector(".levelHard");
 
 
 let reloadGame = function (elem) {
+
+      let playAgain = false;
+		
 		elem.forEach(elemItem => {
 			elemItem.addEventListener("click", function() {
-		if(elemItem.classList.contains('lose')) {
-			setTimeout( function() {
-			if(confirm("You lose! Press OK to reload!")) {
-				setTimeout( function() {
+		if(playAgain) {
 			window.location.reload();
-		}, 500);}
-				else {
-		  setTimeout( function() {
-			window.location.reload();
-		}, 500);
-				}
-		}, 500);}
-			else {
-	    setTimeout( function(){
-			alert("You WON");
-		}, 500);
-		setTimeout( function() {
-			window.location.reload();
-		}, 500);}
-			});
-});
-	};
-reloadGame(elemEasy);
-reloadGame(elemNorm);
-reloadGame(elemHard);
+      }	else {
+	      playAgain = true;
+         }
+        });
+       })  
+	   };
+
+	reloadGame(elemEasy);
+	reloadGame(elemNorm);
+	reloadGame(elemHard);
