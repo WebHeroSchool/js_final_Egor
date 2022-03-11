@@ -246,7 +246,7 @@ body{
 
 @media(max-width: 350px) {
 .header-button {
-	flex: 0 1 100%;
+	flex: 0 1 50%;
 }
 .card__1 {
   left: -19px;
