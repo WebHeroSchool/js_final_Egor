@@ -79,11 +79,8 @@ let box3 = document.querySelector(".levelHard");
 
 
 
-
 let reloadGame = function (elem) {
-
-      let playAgain = false;
-		
+let playAgain = false;
 		elem.forEach(elemItem => {
 			elemItem.addEventListener("click", function() {
 		if(playAgain) {

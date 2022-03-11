@@ -1,12 +1,16 @@
 *{
 	box-sizing: border-box;
 }
+body{
+	background-image: url(images/Background.jpg);
+	background-repeat: no-repeat;
+	background-size: cover;
+	min-height: 100vh;
+}
 .wrapper {
 	max-width: 1440px;
 	margin: 0 auto;
-	background: url(images/Background.png) repeat top center;
-	background-size: cover;
-	height: auto;
+	min-height: 100vh;
 }
 .header {
 	max-width: 87.84%;
@@ -19,7 +23,6 @@
 }
 }
 .header__title {
-
 }
 .header__title-title {
 	font-family: 'Roboto';
@@ -114,11 +117,11 @@
    color: #fff;
    margin: 112px 0 0 0;
    cursor: pointer;
+   border: none;
  
 }
 @media(max-width: 948px){
 	.header__button {
-	
 	width: 303px;
    padding: 20px 58px;
 }
@@ -136,29 +139,36 @@
 	flex-flow: row nowrap;
    position: relative;
    width: 344px;
-   height: 383px;
+   height: 343px;
    flex: 0 1 auto;
 
 }
 @media(max-width: 948px){
 	.header__card {
 		width: 291px;
-      height: 343px;
+      height: 143px;
       margin: 45px 0 0 0;
 }
 }
 @media(max-width: 800px){
 	.header__card {
 		width: 160px;
-      height: 343px;
+      height: 100px;
       margin: 0 0 0 0;
 }
 }
-@media(max-width: 449px){
+@media(max-width: 490px){
 		.header__card {
-		width: 160px;
-      height: 343px;
-      margin: 45px 0 0 0;
+			display: none;
+}
+.header__level {
+	margin-left: -48px;
+	text-align: center;
+   font-size: 25px;
+}
+.header-button {
+ align-items: center;
+ flex: 0 1 65%;
 }
 }
 .card__1 {
@@ -231,15 +241,12 @@
 	max-width: 87.84%;
 	margin: 0 auto;
 	padding: 129px 0 0 0;
-}
-.header-button {
-	flex: 0 1 90%;
 }	
 }
 
 @media(max-width: 350px) {
 .header-button {
-	flex: 0 1 80%;
+	flex: 0 1 100%;
 }
 .card__1 {
   left: -19px;
@@ -320,12 +327,13 @@
    margin-right: 24px;
    margin-top: 14px;
    flex: 0 1 auto;
+   background-repeat: no-repeat;
+   cursor: pointer;
 }
 .LevelEasy__card-flip:hover{
-	position: relative;
    filter: drop-shadow(10px 10px 15px rgba(0, 0, 0, 0.5));
-   animation: move 10s ease-out;
-   transform: scale(-1, 1);
+   margin-top: -10px;
+   transform: rotate(-3.08deg);
 }
 .LevelNorm__card-flip{
 	background-color: transparent;
@@ -335,11 +343,12 @@
    margin-right: 14px;
    margin-top: 14px;
    flex: 0 1 auto;
+   cursor: pointer;
 }
 .LevelNorm__card-flip:hover{
-	position: relative;
    filter: drop-shadow(10px 10px 15px rgba(0, 0, 0, 0.5));
-   animation: move 10s ease-out;
+   margin-top: -10px;
+   transform: rotate(-3.08deg);
 }
 .LevelHard__card-flip{
 	background-color: transparent;
@@ -349,11 +358,12 @@
    margin-right: 14px;
    margin-top: 14px;
    flex: 0 1 auto;
+   cursor: pointer;
 }
 .LevelHard__card-flip:hover{
-	position: relative;
    filter: drop-shadow(10px 10px 15px rgba(0, 0, 0, 0.5));
-   animation: move 10s ease-out;
+   margin-top: -10px;
+   transform: rotate(-3.08deg);
 }
 @media(max-width: 800px) {
 	.LevelEasy__card-flip{ 
@@ -421,7 +431,6 @@
   transition: transform 0.9s;
   transform-style: preserve-3d;
 }
-
 .levelNorm__card-inner {
   position: relative;
   width: 100%;
@@ -457,22 +466,10 @@
    height: 100%;
 }
 .win {
-	background: url(images/2.png) no-repeat center center;
+	background: url("images/2.jpg") no-repeat center center;
 	background-size: 100%;
 }
 .lose {
-	background: url(images/3.png) no-repeat center center;
+	background: url("images/3.jpg") no-repeat center center;
 	background-size: 100%;
-}
-
-@keyframes move {
-from {top: -10px;
-	transform: rotate(-3.08deg);
-}
-50% {top: -10px;
-	transform: rotate(-3.08deg);
-}
-to {top: -10px;
-	transform: rotate(-3.08deg);
-}
 }
