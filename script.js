@@ -94,7 +94,7 @@ choise.addEventListener("click", function() {
 			}
 });
 
-function addAnimation(elem){
+let addAnimation = function(elem){
 
 	elem.forEach(elemItem => {
 
@@ -115,7 +115,6 @@ let reloadGame = function (elem) {
 		elem.forEach(elemItem => {
 			elemItem.addEventListener("click", function() {
            if(playAgain) {
-           	  elemItem.removeEventListener("click", addAnimation);
               window.location.reload();
               elemItem.classList.remove('flip');
              } else {
