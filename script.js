@@ -116,12 +116,8 @@ let reloadGame = function (elem) {
 			elemItem.addEventListener("click", function() {
            if(playAgain) {
            	  elemItem.removeEventListener("click", addAnimation);
-              elemItem.classList.remove('flip');
-              playAgain = false;
               window.location.reload();
-              setTimeout( function(){
-              	elemItem.innerHTML = '';
-              }, 10);
+              elemItem.classList.remove('flip');
              } else {
               playAgain = true;
              }
