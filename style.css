@@ -71,7 +71,7 @@ body{
 }
 .header__button {
 	text-align:center;
-	width: 352px;
+	width: 340px;
    background: #D62B2E;
    padding: 26px 84px;
    border-radius: 7px;
@@ -337,21 +337,110 @@ body{
 }
 .easy{
   width: 100%;
-  margin: 120px auto 0 auto;
+  margin: 200px auto 0 auto;
   flex-flow: row wrap;
 }
 .norm{
   max-width: 730px;
   flex-flow: row wrap;
-  margin: 0 auto 0 auto;
+  margin: 90px auto 0 auto;
 }
 .hard{
   max-width: 100%;
-  margin: 0 auto 0 auto;
+  margin: 70px auto 0 auto;
   display: flex;
   flex-flow: row wrap;
 }
-
+@media(min-width: 767px) and (max-width: 1024px){
+ .easy{
+  margin: 200px auto 0 auto;
+}
+.norm{
+  margin: 70px auto 0 auto;
+}
+.hard{
+  margin: 0 auto 0 auto;
+} 
+}
+@media(max-width: 800px){
+ .easy{
+  margin: 300px auto 0 auto;
+}
+.norm{
+  margin: 130px auto 0 auto;
+}
+.hard{
+  margin: 0 auto 0 auto;
+}  
+}
+@media(max-width: 765px){
+  .header__title {
+  padding: 0 0 0 0;
+}
+.container__card-flip{ 
+   width: 203px;
+   height: 320px;
+   margin: 0 5px 10px 5px;
+ }
+ .easy{
+  margin: 200px auto 0 auto;
+}
+.norm{
+  margin: 130px auto 0 auto;
+}
+.hard{
+  margin: 10px auto 0 auto;
+}  
+}
+@media(min-width: 394px) and (max-width: 655px){
+ .easy{
+  margin: 20px auto 0 auto;
+}
+.norm{
+  margin: 10px auto 0 auto;
+}
+.hard{
+  margin: 0 auto 0 auto;
+}  
+}
+@media(min-width: 321px) and (max-width: 393px){
+  .header__title {
+  padding: 0 0 0 0;
+}
+.container__card-flip{ 
+   width: 209px;
+   height: 340px;
+   margin: 0 5px 0px 5px;
+ }
+ .easy{
+  margin: 10px auto 0 auto;
+}
+.norm{
+  margin: 10px auto 0 auto;
+}
+.hard{
+  margin: 10px auto 0 auto;
+}  
+}
+@media(max-width: 320px){
+  .header__title {
+  padding: 0 0 0 0;
+}
+ .container__card-flip{ 
+   width: 128px;
+   height: 205px;
+   margin: 0 5px 10px 5px;
+ }
+ .easy{
+  margin: 10px auto 0 auto;
+}
+.norm{
+  margin: 10px auto 0 auto;
+}
+.hard{
+  margin: 10px auto 0 auto;
+}  
+}
 .bug{
    background-image: url(images/2.jpg);
    background-size: 100%;
