@@ -115,10 +115,11 @@ let reloadGame = function (elem) {
 		elem.forEach(elemItem => {
 			elemItem.addEventListener("click", function() {
            if(playAgain) {
-              window.location.reload();
-              elemItem.classList.remove('flip');
-             } else {
-              playAgain = true;
+           	window.location.reload();
+              	elemCards.innerHTML = '';
+           	   header.style.display = 'block';
+             } else {	
+               playAgain = true;
              }
 		})
     })
