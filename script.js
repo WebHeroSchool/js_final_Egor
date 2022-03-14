@@ -121,7 +121,7 @@ let reloadGame = function (elem) {
               window.location.reload();
               setTimeout( function(){
               	elemItem.innerHTML = '';
-              }, 30);
+              }, 0);
              } else {
               playAgain = true;
              }
