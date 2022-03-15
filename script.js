@@ -1,28 +1,30 @@
-window.onload = function() {
-level[0].classList.add("start");
-};
-
-const elemCard = document.querySelector('.container__card');
-const elemCards = document.querySelector('.container__cards');
-const level = document.querySelectorAll('.header__level-item');
+const elemCard = document.querySelector(".container__card");
+const elemCards = document.querySelector(".container__cards");
+const level = document.querySelectorAll(".header__level-item");
 const header = document.querySelector(".header");
 const choise = document.querySelector(".header__button");
 
 
-level.forEach(levelItem => {
+
+
+level.forEach((levelItem) => {
 	levelItem.addEventListener("click", function() {
 		for(let i = 0; i < level.length; i++){
-			level[i].classList.remove('start');
+			level[i].classList.remove("start");
 		}
 		levelItem.classList.toggle("start");
 	});
 });
+     level[0].classList.add("start");
 
 let random =  function(min, max) {
 	return  Math.floor(Math.random() * (max - min + 1 ) + min);
 };
 
+
+		
 choise.addEventListener("click", function() {	
+     
 
     let number;
     const countSimple = 3;
@@ -37,7 +39,7 @@ choise.addEventListener("click", function() {
 		let card = elemCard.children[0].cloneNode(true);
 		elemCards.appendChild(card);
 		}
-		const elemInner = document.querySelectorAll('.container__card-inner');
+      const elemInner = document.querySelectorAll(".container__card-inner");
 		addAnimation(elemInner);
 		reloadGame(elemInner);
 
@@ -57,10 +59,9 @@ choise.addEventListener("click", function() {
 		let card = elemCard.children[0].cloneNode(true);
 		elemCards.appendChild(card);
 		}
-		const elemInner = document.querySelectorAll('.container__card-inner');
+		const elemInner = document.querySelectorAll(".container__card-inner");
 		addAnimation(elemInner);
 		reloadGame(elemInner);
-
 		elemCards.classList.add("norm");
 
 		let bug = document.querySelectorAll(".container__card-face-back");
@@ -77,10 +78,9 @@ choise.addEventListener("click", function() {
 		let card = elemCard.children[0].cloneNode(true);
 		elemCards.appendChild(card);
 		}
-		const elemInner = document.querySelectorAll('.container__card-inner');
+		const elemInner = document.querySelectorAll(".container__card-inner");
 		addAnimation(elemInner);
 		reloadGame(elemInner);
-
 		elemCards.classList.add("hard");
 
 		let bug = document.querySelectorAll(".container__card-face-back");
@@ -90,37 +90,34 @@ choise.addEventListener("click", function() {
 		bugCard.classList.add("bug");
 
 	} else {
-		alert('Choose a level');
+		alert("Choose a level");
 			}
 });
 
-let addAnimation = function(elem){
+function addAnimation(elem){
 
-	elem.forEach(elemItem => {
+	elem.forEach((elemItem) => {
 
 		elemItem.addEventListener("click", function() {
-      if(elemItem.classList.contains('flip')) {
-         elemItem.classList.remove('flip');
- }    else {
-      elemItem.classList.add('flip');
- }
+      elemItem.classList.toggle("flip");
 	})
 });
 }
 
-let reloadGame = function (elem) {
+function reloadGame(elem) {
 
   let playAgain = false;
 		
-		elem.forEach(elemItem => {
+		elem.forEach((elemItem) => {
 			elemItem.addEventListener("click", function() {
            if(playAgain) {
            	window.location.reload();
-              	elemCards.innerHTML = '';
-           	   header.style.display = 'block';
+              	elemCards.innerHTML ="''";
+           	   header.style.display ="block";
              } else {	
                playAgain = true;
              }
 		})
     })
 	};
+	

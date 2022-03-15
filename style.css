@@ -217,7 +217,7 @@ body{
   left: -51px;
 }	
 }
-@media(min-width: 350px; max-width: 490px ){
+@media(min-width: 350px)and(max-width: 490px ){
    .header__level {
     margin-left: 35px;
     font-size: 25px;
@@ -241,7 +241,7 @@ body{
 	top: 10px;
 }
 }
-@media(min-width: 800px; max-width: 948px) {
+@media(min-width: 800px)and(max-width: 948px) {
 	.start::before  {
 	top: 10px;
 }
