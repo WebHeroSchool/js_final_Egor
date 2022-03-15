@@ -28,7 +28,7 @@ function reloadGame(elem) {
              } else {	
                playAgain = true;
              }
-		})
+		});
     })
 	}
 

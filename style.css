@@ -68,7 +68,7 @@ body {
   font-weight: bold;
   font-size: 38px;
   color: #fff;
-  }
+    }
 
 .header__level-item {
   list-style: none;
@@ -85,7 +85,7 @@ body {
 .header__button {
   text-align: center;
   width: 305px;
-  background: "#D62B2E";
+  background: #D62B2E;
   padding: 26px 56px;
   border-radius: 7px;
   outline: none;
@@ -136,7 +136,7 @@ body {
 }
 
 @media (max-width: 490px) {
-.header__card {
+  .header__card {
     display: none;
 }
 
@@ -149,17 +149,17 @@ body {
 
 .card__1 {
   max-width: 100%;
-    position: absolute;
-    top: 25px;
-    z-index: 2;
-    transform: rotate(30.26deg);
+        position: absolute;
+        top: 25px;
+        z-index: 2;
+        transform: rotate(30.26deg);
 }
 
 .card__2 {
   max-width: 100%;
     position: absolute;
   left: -180px;
-    z-index: 1;
+        z-index: 1;
 }
 
 @media (max-width: 948px) {
@@ -170,7 +170,6 @@ body {
     left: -59px;
     z-index: 2;
     transform: rotate(30.26deg);
-
 }
 
   .card__2 {
@@ -203,15 +202,15 @@ body {
 }
 
 @media (max-width: 700px) {
-.header-button {
+  .header-button {
     flex: 0 1 65%;
 }
 
-.card__1 {
+  .card__1 {
     max-width: 70%;
 }
 
-.card__2 {
+  .card__2 {
     max-width: 70%;
 }
 
@@ -295,13 +294,13 @@ body {
 }
 
 @media (min-width: 800px) and (max-width: 948px) {
-.start::before {
+  .start::before {
     top: 10px;
 }
 }
 
 @media (max-width: 798px) {
-.start::before {
+  .start::before {
     top: 10px;
 }
 }
@@ -325,7 +324,7 @@ body {
 }
 
 @media (max-width: 899px) {
-.level__easy {
+  .level__easy {
     padding: 55px 0 30px  0;
   }
 }
@@ -445,7 +444,7 @@ body {
 
   .hard {
     margin: 0 auto 0 auto;
-}  
+}
 }
 
 @media (max-width: 765px) {
@@ -459,22 +458,21 @@ body {
     margin: 0 5px -30px 5px;
  }
 
-.easy {
+  .easy {
     margin: 200px auto 0 auto;
 }
 
-.norm {
+  .norm {
     margin: 130px auto 0 auto;
 }
 
-.hard {
+  .hard {
     margin: 10px auto 0 auto;
 }  
 }
 
 @media (min-width: 394px) and (max-width: 655px) {
- 
-.easy {
+  .easy {
     margin: 20px auto 0 auto;
 }
 
@@ -488,7 +486,6 @@ body {
 }
 
 @media (min-width: 321px) and (max-width: 393px) {
-
   .header__title {
     padding: 0 0 0 0;
 }
@@ -514,11 +511,11 @@ body {
 
 @media (max-width: 320px) {
    
-.header__title {
+  .header__title {
     padding: 0 0 0 0;
 }
- 
-.container__card-flip { 
+
+  .container__card-flip {
     width: 128px;
     height: 265px;
     margin: 0  5px -55px 5px;
