@@ -13,7 +13,7 @@ function addAnimation(elem){
       elemItem.classList.toggle("flip");
 	})
 })
-};
+}
 
 function reloadGame(elem) {
 
@@ -48,12 +48,9 @@ let random =  function(min, max) {
 	return  Math.floor(Math.random() * (max - min + 1 ) + min);
 };
 
-let randomEasy = random(1,3);
-let randomNorm = random(1,6);
-let randomHard = random(1,10);
 		
 choise.addEventListener("click", function() {	
-     
+    let number;
     const countSimple = 3;
     const countMedium = 6;
     const countComplicated = 10;
@@ -73,7 +70,8 @@ choise.addEventListener("click", function() {
 		elemCards.classList.add("easy");
 
 		let bug = document.querySelectorAll(".container__card-face-back");
-		let bugCard = bug[randomEasy];
+		number = random(1,3);
+		let bugCard = bug[number];
 		bugCard.classList.add("bug");
 
 	} else if(level[1].classList.contains("start")) {
@@ -91,7 +89,8 @@ choise.addEventListener("click", function() {
 
 		let bug = document.querySelectorAll(".container__card-face-back");
 
-		let bugCard = bug[randomNorm];
+		number = random(1,6);
+		let bugCard = bug[number];
 		bugCard.classList.add("bug");
 
 	} else if(level[2].classList.contains("start")) {
@@ -109,7 +108,8 @@ choise.addEventListener("click", function() {
 
 		let bug = document.querySelectorAll(".container__card-face-back");
 
-		let bugCard = bug[randomHard];
+		number = random(1,10);
+		let bugCard = bug[number];
 		bugCard.classList.add("bug");
 
 	} else {
