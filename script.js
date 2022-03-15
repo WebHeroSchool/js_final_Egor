@@ -9,10 +9,7 @@ const choise = document.querySelector(".header__button");
 level.forEach((levelItem) => {
 	levelItem.addEventListener("click", function() {
 		for(let i = 0; i < level.length; i++){
-			if(level[i].classList.contains("start"))
-			{
 				level[i].classList.remove("start");
-			}
 		}
 		levelItem.classList.toggle("start");
 	});
@@ -50,7 +47,6 @@ choise.addEventListener("click", function() {
 		elemCards.classList.add("easy");
 
 		let bug = document.querySelectorAll(".container__card-face-back");
-		
 		let number = random(1,3);
 		let bugCard = bug[number];
 		bugCard.classList.add("bug");
@@ -115,9 +111,9 @@ function reloadGame(elem) {
 		elem.forEach((elemItem) => {
 			elemItem.addEventListener("click", function() {
            if(playAgain) {
-           	window.location.reload();
-              	elemCards.innerHTML="''";
-           	   header.style.display="block";
+               window.location.reload();
+               elemCards.innerHTML="''";
+               header.style.display="block";
              } else {	
                playAgain = true;
              }
