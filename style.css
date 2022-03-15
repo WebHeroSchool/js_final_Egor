@@ -248,7 +248,7 @@ body{
 }
 @media(max-width: 798px){
 .start::before  {
-	top: 15px;
+	top: 10px;
 }	
 }
 
