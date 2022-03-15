@@ -6,11 +6,13 @@ const choise = document.querySelector(".header__button");
 
 
 
-
 level.forEach((levelItem) => {
 	levelItem.addEventListener("click", function() {
 		for(let i = 0; i < level.length; i++){
-			level[i].classList.remove("start");
+			if(level[i].classList.contains("start"))
+			{
+				level[i].classList.remove("start");
+			}
 		}
 		levelItem.classList.toggle("start");
 	});
@@ -21,7 +23,9 @@ let random =  function(min, max) {
 	return  Math.floor(Math.random() * (max - min + 1 ) + min);
 };
 
-
+let randomEasy = random(1,3);
+let randomNorm = random(1,6);
+let randomHard = random(1,10);
 		
 choise.addEventListener("click", function() {	
      
@@ -46,7 +50,7 @@ choise.addEventListener("click", function() {
 		elemCards.classList.add("easy");
 
 		let bug = document.querySelectorAll(".container__card-face-back");
-
+		
 		let number = random(1,3);
 		let bugCard = bug[number];
 		bugCard.classList.add("bug");
