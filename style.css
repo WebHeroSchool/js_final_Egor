@@ -68,7 +68,7 @@ body {
   font-weight: bold;
   font-size: 38px;
   color: #fff;
-    }
+}
 
 .header__level-item {
   list-style: none;
@@ -76,7 +76,7 @@ body {
   padding: 0 0 0 10px;
   cursor: pointer;
   position: relative;
-  }
+}
 
 .header-button {
   flex: 0 1 95%;
@@ -85,7 +85,7 @@ body {
 .header__button {
   text-align: center;
   width: 305px;
-  background: #d62B2e;
+  background-color: #d62B2e;
   padding: 26px 56px;
   border-radius: 7px;
   outline: none;
@@ -500,11 +500,11 @@ body {
     margin: 10px auto 0 auto;
 }
 
-.norm {
+  .norm {
     margin: 10px auto 0 auto;
 }
 
-.hard {
+  .hard {
     margin: 10px auto 0 auto;
 }
 }
@@ -520,7 +520,7 @@ body {
     height: 265px;
     margin: 0  5px -55px 5px;
  }
- 
+
   .easy {
     margin: 10px auto 0 auto;
 }
@@ -531,7 +531,7 @@ body {
 
   .hard {
     margin: 10px auto 0 auto;
-}  
+}
 }
 
 .bug {

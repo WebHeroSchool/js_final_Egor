@@ -12,7 +12,7 @@ function addAnimation(elem){
       elemItem.classList.toggle("flip");
 	});
 });
-}
+};
 
 function reloadGame(elem) {
 
@@ -29,7 +29,7 @@ function reloadGame(elem) {
              }
 		});
     });
-	}
+	};
 
 
 
