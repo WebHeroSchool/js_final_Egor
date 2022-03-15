@@ -1,6 +1,7 @@
 *{
 	box-sizing: border-box;
 }
+
 body{
 	background-image: url(images/Background.png);
   background-repeat: repeat;
@@ -8,24 +9,29 @@ body{
 	height: 100vh;
   display: flex;
 }
+
 .wrapper {
-	width: 1440px;
-	margin: 0 auto;
+  width: 1440px;
+  margin: 0 auto;
   height: auto;
 }
+
 .header {
-	max-width: 87.84%;
-	margin: 0 auto;
+  max-width: 87.84%;
+  margin: 0 auto;
 }
+
 .header__title {
   padding: 50px 0 0 0;
 }
+
 .header__title-title {
-	font-family: 'Roboto', sans-serif;
-	color: #fff;
-	font-size: 57px;
-	margin: 0;
+  font-family: 'Roboto', sans-serif;
+  color: #fff;
+  font-size: 57px;
+  margin: 0;
 }
+
 .header__title-subtitle {
 	font-family: 'Roboto';
 	color: #fff;
@@ -33,6 +39,7 @@ body{
   line-height: 22px;
   margin: 8px 0 0 0;
 }
+
 .header__row {
 	display: flex;
 	flex-flow: row;
@@ -41,25 +48,28 @@ body{
 }
 
 @media (max-width: 900px) {
-	.header__row {
+.header__row {
 	flex-flow: row nowrap;
 	justify-content: flex-start;
 }
 }
 
 @media (max-width: 450px){
-	.header__row {
+.header__row {
 	flex-flow: row wrap;
 }
+
 }
+
 .header__level {
 	margin: 50px 0 0 0;
 	font-family: 'Roboto';
-   font-style: normal;
-   font-weight: bold;
-   font-size: 38px;
-   color: #fff;
+  font-style: normal;
+  font-weight: bold;
+  font-size: 38px;
+  color: #fff;
 }
+
 .header__level-item {
 	list-style: none;
 	margin: 24px 0 0 0;
@@ -71,66 +81,72 @@ body{
 .header-button {
 	flex: 0 1 95%;
 }
+
 .header__button {
 	text-align:center;
 	width: 305px;
-   background: #D62B2E;
-   padding: 26px 56px;
-   border-radius: 7px;
-   outline: none;
-   font-family: 'Roboto';
-   font-style: normal;
-   font-weight: bold;
-   font-size: 32px;
-   color: #fff;
-   margin: 60px  0  0  0;
-   cursor: pointer;
-   border: none;
+  background: #D62B2E;
+  padding: 26px 56px;
+  border-radius: 7px;
+  outline: none;
+  font-family: 'Roboto';
+  font-style: normal;
+  font-weight: bold;
+  font-size: 32px;
+  color: #fff;
+  margin: 60px  0  0  0;
+  cursor: pointer;
+  border: none;
  
 }
 
 @media (max-width: 320px){
- .header__button {
+.header__button {
   width: 266px;
   padding: 26px 45px;
-} 
+}
+
 }
 
 .header__card {
 	display: flex;
 	flex-flow: row nowrap;
-   position: relative;
-   width: 344px;
-   height: 343px;
-   flex: 0 1 auto;
+  position: relative;
+  width: 344px;
+  height: 343px;
+  flex: 0 1 auto;
 
 }
 
 @media (max-width: 948px){
-	.header__card {
-		width: 291px;
-      height: 143px;
-      margin: 45px 0 0 0;
+.header__card {
+	width: 291px;
+  height: 143px;
+  margin: 45px 0 0 0;
 }
+
 }
 
 @media (max-width: 800px){
-	.header__card {
-    display: none;
-		width: 160px;
-      height: 100px;
-      margin: 0 0 0 0;
+.header__card {
+  display: none;
+  width: 160px;
+  height: 100px;
+  margin: 0 0 0 0;
 }
+
 }
 
 @media (max-width: 490px){
-		.header__card  {
-			display: none;
+.header__card  {
+  display: none;
 }
+
 .header-button {
- align-items: center;
- flex: 0 1 65%;
+  align-items: center;
+  flex: 0 1 65%;
 }
+
 }
 
 .card__1  {
@@ -141,6 +157,7 @@ body{
   transform: rotate(30.26deg);
 
 }
+
 .card__2  {
   max-width: 100%;
   position: absolute;
@@ -149,8 +166,8 @@ body{
 }
 
 @media (max-width: 948px){
-	.card__1 {
-	max-width: 70%;
+.card__1 {
+  max-width: 70%;
   position:  absolute;
   top: 25px;
   left: -59px;
@@ -158,17 +175,19 @@ body{
   transform: rotate(30.26deg);
 
 }
-	.card__2 {
+
+.card__2 {
   max-width: 70%;
   position: absolute;
   left: -139px;
   z-index: 1;
 }
+
 }
 
 @media (max-width: 800px){
-	.card__1 {
-	max-width: 90%;
+.card__1 {
+  max-width: 90%;
   position: absolute;
   top: 25px;
   left: -59px;
@@ -176,128 +195,147 @@ body{
   transform: rotate(30.26deg);
 
 }
-	.card__2 {
+
+.card__2 {
   max-width: 90%;
   position: absolute;
   left: -91px;
   z-index: 1;
 }
+
 }
 
 @media (max-width: 700px){
-	.header-button {
-	flex: 0 1 65%;
-} 
-.card__1 {
-	max-width: 70%;
+.header-button {
+  flex: 0 1 65%;
 }
-	.card__2 {
+
+.card__1 {
   max-width: 70%;
 }
+
+.card__2 {
+  max-width: 70%;
+}
+
 }
 
 @media (max-width: 450px){
 .card__1 {
-	max-width: 50%;
-}
-	.card__2 {
   max-width: 50%;
 }
+
+.card__2 {
+  max-width: 50%;
+}
+
 .header {
-	max-width: 87.84%;
-	margin: 0 auto;
-	padding: 30px 0 31px 0;
+  max-width: 87.84%;
+  margin: 0 auto;
+  padding: 30px 0 31px 0;
 }	
+
 }
 
 @media (max-width: 350px){
-  .header__title-title {
+.header__title-title {
   text-align: center;
   font-size: 50px;
 }
+
 .header__title-subtitle {
    text-align: center;
 }
+
 .header-button {
 	flex: 0 1 50%;
 }
+
 .card__1 {
   left: -19px;
 }
+
 .card__2 {
   left: -51px;
-}	
+}
+
 }
 
 .start {  
 }
 
 .start::before {
-    content: '';
-    position: absolute;
-    width: 26px;
-    height: 26px;
-    top: 10px;
-    left: -33px;
-    cursor: pointer;
-    background: url('images/Rectangle 2.png') no-repeat top center;
+  content: '';
+  position: absolute;
+  width: 26px;
+  height: 26px;
+  top: 10px;
+  left: -33px;
+  cursor: pointer;
+  background: url('images/Rectangle 2.png') no-repeat top center;
 }
 
 @media (min-width: 350px)and(max-width: 490px ){
-   .header__level {
-    margin-left: 35px;
-    font-size: 25px;
+.header__level {
+  margin-left: 35px;
+  font-size: 25px;
 }
-    .start::before {
-	  content: '';
-	  position: absolute;
-	  width: 26px;
-	  height: 26px;
-	  top: 10px;
-	  left: -33px;
-	  cursor: pointer;
-	  background: url('images/Rectangle 2.png') no-repeat top center;
+
+.start::before {
+  content: '';
+  position: absolute;
+  width: 26px;
+  height: 26px;
+  top: 10px;
+  left: -33px;
+  cursor: pointer;
+  background: url('images/Rectangle 2.png') no-repeat top center;
 }
+
 }
 
 @media (max-width: 948px){
-	.start::before  {
+.start::before  {
 	top: 10px;
 }
+
 }
 
 @media (min-width: 800px) and (max-width: 948px){
-	.start::before  {
+.start::before  {
 	top: 10px;
 }
+
 }
 
 @media (max-width: 798px){
 .start::before  {
-	top: 10px;
+  top: 10px;
 }	
+
 }
+
 .level__easy {
-	max-width: 100%;
-	margin: 0 auto;
-	padding: 74px 0 30px  0;
+  max-width: 100%;
+  margin: 0 auto;
+  padding: 74px 0 30px  0;
 }
 
 @media (max-width: 600px){
-  .level__easy {
-    padding: 30px 0 30px  0;
+.level__easy {
+  padding: 30px 0 30px  0;
   }
 }
 
 @media (max-width: 700px){
-  .level__easy {
-    padding: 30px 0 30px  0;
+.level__easy {
+  padding: 30px 0 30px  0;
   }
 }
 
 @media (max-width: 899px){
-  .level__easy {
-    padding: 55px 0 30px  0;
+.level__easy {
+  padding: 55px 0 30px  0;
   }
 }
 
@@ -308,39 +346,43 @@ body{
 }
 
 .container__card-flip {
-	background-color: transparent;
-   perspective: 1000px; 
-   width: 218px;
-   height: 360px;
-   margin: 0 24px 0 0;
-   flex: 0 1 auto;
-   background-repeat: no-repeat;
-   cursor: pointer;
-    overflow: hidden;
+  background-color: transparent;
+  perspective: 1000px; 
+  width: 218px;
+  height: 360px;
+  margin: 0 24px 0 0;
+  flex: 0 1 auto;
+  background-repeat: no-repeat;
+  cursor: pointer;
+  overflow: hidden;
 }
+
 .container__card-flip:hover{
-   filter: drop-shadow(10px 10px 15px rgba(0, 0, 0, 0.5));
-   margin-top: -10px;
-   transform: rotate(-3.08deg);
+  filter: drop-shadow(10px 10px 15px rgba(0, 0, 0, 0.5));
+  margin-top: -10px;
+  transform: rotate(-3.08deg);
 }
+
 .container__card-inner {
   position: relative;
   width: 100%;
-   height: 100%;
+  height: 100%;
   transition: transform 0.9s;
   transform-style: preserve-3d;
 }
 
 .flip {
-	transform :rotateY(180deg);
+  transform :rotateY(180deg);
 }
+
 .card__face{
-	position: absolute;
+  position: absolute;
   width: 100%;
   height: 100%;
   -webkit-backface-visibility: hidden;
   backface-visibility: hidden;
 }
+
 .container__card-face-front{
   background-image: url("images/1.jpg");
   background-repeat: no-repeat;
@@ -348,6 +390,7 @@ body{
   background-position: center center; 
   width: 100%;
 }
+
 .container__card-face-back {
   transform: rotateY(180deg);
   background-image: url("images/3.jpg");
@@ -356,6 +399,7 @@ body{
   background-size: 100%;
   width: 100%;
 }
+
 .container__cards {
   max-width: 100%;
   margin: 0 auto;
@@ -364,119 +408,155 @@ body{
   align-items: center;
   align-content: center;
 }
+
 .easy{
   width: 100%;
   margin: 200px auto 0 auto;
   flex-flow: row wrap;
 }
+
 .norm{
   max-width: 730px;
   flex-flow: row wrap;
   margin: 30px auto 0 auto;
 }
+
 .hard{
   max-width: 100%;
   margin: 25px auto 0 auto;
   display: flex;
   flex-flow: row wrap;
 }
+
 @media (min-width: 767px) and (max-width: 1024px){
- .easy{
+
+.easy{
   margin: 200px auto 0 auto;
 }
+
 .norm{
   margin: 70px auto 0 auto;
 }
+
 .hard{
   margin: 0 auto 0 auto;
 } 
+
 }
+
 @media (max-width: 800px){
- .easy{
+ 
+.easy{
   margin: 300px auto 0 auto;
 }
+
 .norm{
   margin: 130px auto 0 auto;
 }
+
 .hard{
   margin: 0 auto 0 auto;
 }  
+
 }
 
 @media (max-width: 765px){
+
   .header__title {
   padding: 0 0 0 0;
 }
+
 .container__card-flip{ 
-   width: 203px;
-   height: 360px;
-   margin: 0 5px -30px 5px;
+  width: 203px;
+  height: 360px;
+  margin: 0 5px -30px 5px;
  }
- .easy{
+
+.easy{
   margin: 200px auto 0 auto;
 }
+
 .norm{
   margin: 130px auto 0 auto;
 }
+
 .hard{
   margin: 10px auto 0 auto;
 }  
+
 }
 
 @media (min-width: 394px) and (max-width: 655px){
- .easy{
+ 
+.easy{
   margin: 20px auto 0 auto;
 }
+
 .norm{
   margin: 10px auto 0 auto;
 }
+
 .hard{
   margin: 0 auto 0 auto;
 }  
+
 }
 
 @media (min-width: 321px) and (max-width: 393px){
-  .header__title {
+
+.header__title {
   padding: 0 0 0 0;
 }
+
 .container__card-flip{ 
    width: 209px;
    height: 360px;
    margin: 0 5px -15px 5px;
  }
- .easy{
+
+.easy{
   margin: 10px auto 0 auto;
 }
+
 .norm{
   margin: 10px auto 0 auto;
 }
+
 .hard{
   margin: 10px auto 0 auto;
-}  
+}
+
 }
 
 @media (max-width: 320px){
-    .header__title {
-    padding: 0 0 0 0;
+   
+.header__title {
+  padding: 0 0 0 0;
 }
- .container__card-flip{ 
-   width: 128px;
-   height: 265px;
-   margin: 0 5px -55px 5px;
+ 
+.container__card-flip{ 
+  width: 128px;
+  height: 265px;
+  margin: 0 5px -55px 5px;
  }
- .easy{
+ 
+.easy{
   margin: 10px auto 0 auto;
 }
+
 .norm{
   margin: 10px auto 0 auto;
 }
+
 .hard{
   margin: 10px auto 0 auto;
 }  
+
 }
+
 .bug{
-   background-image: url(images/2.jpg);
-   background-size: 100%;
-   background-repeat: no-repeat;
-    border-radius: 10px;
+  background-image: url(images/2.jpg);
+  background-size: 100%;
+  background-repeat: no-repeat;
+  border-radius: 10px;
 }
