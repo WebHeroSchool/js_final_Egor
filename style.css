@@ -85,7 +85,7 @@ body {
 .header__button {
   text-align: center;
   width: 305px;
-  background: #D62B2E;
+  background: #d62B2e;
   padding: 26px 56px;
   border-radius: 7px;
   outline: none;
@@ -217,11 +217,11 @@ body {
 }
 
 @media (max-width: 450px) {
-.card__1 {
+  .card__1 {
     max-width: 50%;
 }
 
-.card__2 {
+  .card__2 {
     max-width: 50%;
 }
 
@@ -242,7 +242,7 @@ body {
     text-align: center;
 }
 
-.header-button {
+  .header-button {
     flex: 0 1 50%;
 }
 
@@ -468,7 +468,7 @@ body {
 
   .hard {
     margin: 10px auto 0 auto;
-}  
+}
 }
 
 @media (min-width: 394px) and (max-width: 655px) {
@@ -476,11 +476,11 @@ body {
     margin: 20px auto 0 auto;
 }
 
-.norm {
+  .norm {
     margin: 10px auto 0 auto;
 }
 
-.hard {
+  .hard {
     margin: 0 auto 0 auto;
 }  
 }
@@ -510,7 +510,7 @@ body {
 }
 
 @media (max-width: 320px) {
-   
+
   .header__title {
     padding: 0 0 0 0;
 }
@@ -521,15 +521,15 @@ body {
     margin: 0  5px -55px 5px;
  }
  
-.easy {
+  .easy {
     margin: 10px auto 0 auto;
 }
 
-.norm {
+  .norm {
     margin: 10px auto 0 auto;
 }
 
-.hard {
+  .hard {
     margin: 10px auto 0 auto;
 }  
 }

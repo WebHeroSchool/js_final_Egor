@@ -8,7 +8,6 @@ const choise = document.querySelector(".header__button");
 function addAnimation(elem){
 
 	elem.forEach((elemItem) => {
-
 		elemItem.addEventListener("click", function() {
       elemItem.classList.toggle("flip");
 	});
@@ -29,7 +28,7 @@ function reloadGame(elem) {
                playAgain = true;
              }
 		});
-    })
+    });
 	}
 
 
