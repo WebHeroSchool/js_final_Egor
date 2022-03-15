@@ -5,6 +5,34 @@ const header = document.querySelector(".header");
 const choise = document.querySelector(".header__button");
 
 
+function addAnimation(elem){
+
+	elem.forEach((elemItem) => {
+
+		elemItem.addEventListener("click", function() {
+      elemItem.classList.toggle("flip");
+	})
+})
+};
+
+function reloadGame(elem) {
+
+  let playAgain = false;
+		
+		elem.forEach((elemItem) => {
+			elemItem.addEventListener("click", function() {
+           if(playAgain) {
+               window.location.reload();
+               elemCards.innerHTML="''";
+               header.style.display="block";
+             } else {	
+               playAgain = true;
+             }
+		})
+    })
+	};
+
+
 
 level.forEach((levelItem) => {
 	levelItem.addEventListener("click", function() {
@@ -26,8 +54,6 @@ let randomHard = random(1,10);
 		
 choise.addEventListener("click", function() {	
      
-
-    let number;
     const countSimple = 3;
     const countMedium = 6;
     const countComplicated = 10;
@@ -47,8 +73,7 @@ choise.addEventListener("click", function() {
 		elemCards.classList.add("easy");
 
 		let bug = document.querySelectorAll(".container__card-face-back");
-		let number = random(1,3);
-		let bugCard = bug[number];
+		let bugCard = bug[randomEasy];
 		bugCard.classList.add("bug");
 
 	} else if(level[1].classList.contains("start")) {
@@ -66,8 +91,7 @@ choise.addEventListener("click", function() {
 
 		let bug = document.querySelectorAll(".container__card-face-back");
 
-		let number = random(1,6);
-		let bugCard = bug[number];
+		let bugCard = bug[randomNorm];
 		bugCard.classList.add("bug");
 
 	} else if(level[2].classList.contains("start")) {
@@ -85,8 +109,7 @@ choise.addEventListener("click", function() {
 
 		let bug = document.querySelectorAll(".container__card-face-back");
 
-		let number = random(1,10);
-		let bugCard = bug[number];
+		let bugCard = bug[randomHard];
 		bugCard.classList.add("bug");
 
 	} else {
@@ -94,30 +117,4 @@ choise.addEventListener("click", function() {
 			}
 });
 
-function addAnimation(elem){
-
-	elem.forEach((elemItem) => {
-
-		elemItem.addEventListener("click", function() {
-      elemItem.classList.toggle("flip");
-	})
-});
-}
-
-function reloadGame(elem) {
-
-  let playAgain = false;
-		
-		elem.forEach((elemItem) => {
-			elemItem.addEventListener("click", function() {
-           if(playAgain) {
-               window.location.reload();
-               elemCards.innerHTML="''";
-               header.style.display="block";
-             } else {	
-               playAgain = true;
-             }
-		})
-    })
-	};
 	
