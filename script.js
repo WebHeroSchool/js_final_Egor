@@ -12,7 +12,7 @@ function addAnimation(elem){
 		elemItem.addEventListener("click", function() {
       elemItem.classList.toggle("flip");
 	});
-})
+});
 }
 
 function reloadGame(elem) {
