@@ -30,8 +30,8 @@ body{
 	font-family: 'Roboto';
 	color: #fff;
 	font-size: 19px;
-   line-height: 22px;
-   margin: 8px 0 0 0;
+  line-height: 22px;
+  margin: 8px 0 0 0;
 }
 .header__row {
 	display: flex;
