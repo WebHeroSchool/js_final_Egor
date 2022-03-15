@@ -112,8 +112,8 @@ function reloadGame(elem) {
 			elemItem.addEventListener("click", function() {
            if(playAgain) {
            	window.location.reload();
-              	elemCards.innerHTML ="''";
-           	   header.style.display ="block";
+              	elemCards.innerHTML="''";
+           	   header.style.display="block";
              } else {	
                playAgain = true;
              }
