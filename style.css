@@ -42,7 +42,7 @@ body{
 @media(max-width: 900px) {
 	.header__row {
 	flex-flow: row nowrap;
-	justify-content: center;
+	justify-content: flex-start;
 }
 }
 @media(max-width: 450px){
@@ -85,6 +85,12 @@ body{
    cursor: pointer;
    border: none;
  
+}
+@media(max-width: 320px){
+ .header__button {
+  width: 266px;
+  padding: 26px 45px;
+} 
 }
 
 .header__card {
@@ -201,10 +207,6 @@ body{
 .header__title-subtitle {
    text-align: center;
 }
-  .header__level {
-  margin-left: 0px;
-   font-size: 40px;
-}
 .header-button {
 	flex: 0 1 50%;
 }
@@ -283,7 +285,7 @@ body{
    perspective: 1000px; 
    width: 218px;
    height: 360px;
-   margin: 0 16px 0 0;
+   margin: 0 24px 0 0;
    flex: 0 1 auto;
    background-repeat: no-repeat;
    cursor: pointer;
