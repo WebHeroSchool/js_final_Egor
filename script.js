@@ -11,7 +11,7 @@ function addAnimation(elem){
 
 		elemItem.addEventListener("click", function() {
       elemItem.classList.toggle("flip");
-	})
+	});
 })
 }
 
@@ -30,7 +30,7 @@ function reloadGame(elem) {
              }
 		})
     })
-	};
+	}
 
 
 
@@ -40,7 +40,7 @@ level.forEach((levelItem) => {
 				level[i].classList.remove("start");
 		}
 		levelItem.classList.toggle("start");
-	});
+	})
 });
      level[0].classList.add("start");
 

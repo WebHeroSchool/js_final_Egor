@@ -1,8 +1,8 @@
-*{
-	box-sizing: border-box;
+* {
+  box-sizing: border-box;
 }
 
-body{
+body {
   background-image: url(images/Background.png);
   background-repeat: repeat;
   background-size: cover;
@@ -48,16 +48,16 @@ body{
 }
 
 @media (max-width: 900px) {
-.header__row {
+  .header__row {
     flex-flow: row nowrap;
     justify-content: flex-start;
-}
+  }
 }
 
 @media (max-width: 450px) {
 .header__row {
     flex-flow: row wrap;
-}
+  }
 
 }
 
@@ -68,7 +68,7 @@ body{
   font-weight: bold;
   font-size: 38px;
   color: #fff;
-}
+  }
 
 .header__level-item {
   list-style: none;
@@ -76,16 +76,16 @@ body{
   padding: 0 0 0 10px;
   cursor: pointer;
   position: relative;
-}
+  }
 
 .header-button {
   flex: 0 1 95%;
 }
 
 .header__button {
-  text-align:center;
+  text-align: center;
   width: 305px;
-  background: #D62B2E;
+  background: "#D62B2E";
   padding: 26px 56px;
   border-radius: 7px;
   outline: none;
@@ -97,11 +97,10 @@ body{
   margin: 60px  0  0  0;
   cursor: pointer;
   border: none;
- 
 }
 
 @media (max-width: 320px) {
-.header__button {
+  .header__button {
     width: 266px;
     padding: 26px 45px;
 }
@@ -119,7 +118,7 @@ body{
 }
 
 @media (max-width: 948px) {
-.header__card {
+  .header__card {
     width: 291px;
     height: 143px;
     margin: 45px 0 0 0;
@@ -138,7 +137,7 @@ body{
 }
 
 @media (max-width: 490px) {
-.header__card  {
+.header__card {
     display: none;
 }
 
@@ -150,7 +149,7 @@ body{
 }
 
 .card__1 {
-    max-width: 100%;
+  max-width: 100%;
     position: absolute;
     top: 25px;
     z-index: 2;
@@ -166,9 +165,9 @@ body{
 }
 
 @media (max-width: 948px) {
-.card__1 {
+  .card__1 {
     max-width: 70%;
-    position:  absolute;
+    position: absolute;
     top: 25px;
     left: -59px;
     z-index: 2;
@@ -176,7 +175,7 @@ body{
 
 }
 
-.card__2 {
+  .card__2 {
     max-width: 70%;
     position: absolute;
     left: -139px;
@@ -229,21 +228,20 @@ body{
     max-width: 50%;
 }
 
-.header {
+  .header {
     max-width: 87.84%;
     margin: 0 auto;
     padding: 30px 0 31px 0;
-}	
-
+}
 }
 
 @media (max-width: 350px) {
-.header__title-title {
+  .header__title-title {
     text-align: center;
     font-size: 50px;
 }
 
-.header__title-subtitle {
+  .header__title-subtitle {
     text-align: center;
 }
 
@@ -258,7 +256,6 @@ body{
 .card__2 {
     left: -51px;
 }
-
 }
 
 .start {  
@@ -275,13 +272,13 @@ body{
   background: url('images/Rectangle 2.png') no-repeat top center;
 }
 
-@media (min-width: 350px) and (max-width: 490px ) {
-.header__level {
+@media (min-width: 350px) and (max-width: 490px) {
+  .header__level {
     margin-left: 35px;
     font-size: 25px;
 }
 
-.start::before {
+  .start::before {
     content: '';
     position: absolute;
     width: 26px;
@@ -291,28 +288,24 @@ body{
     cursor: pointer;
     background: url('images/Rectangle 2.png') no-repeat top center;
 }
-
 }
 
 @media (max-width: 948px) {
 .start::before {
     top: 10px;
 }
-
 }
 
 @media (min-width: 800px) and (max-width: 948px) {
 .start::before {
     top: 10px;
 }
-
 }
 
 @media (max-width: 798px) {
 .start::before {
     top: 10px;
 }
-
 }
 
 .level__easy {
@@ -328,7 +321,7 @@ body{
 }
 
 @media (max-width: 700px) {
-.level__easy {
+  .level__easy {
     padding: 30px 0 30px  0;
   }
 }
@@ -347,7 +340,7 @@ body{
 
 .container__card-flip {
   background-color: transparent;
-  perspective: 1000px; 
+  perspective: 1000px;
   width: 218px;
   height: 360px;
   margin: 0 24px 0 0;
@@ -372,7 +365,7 @@ body{
 }
 
 .flip {
-  transform :rotateY(180deg);
+  transform: rotateY(180deg);
 }
 
 .card__face {
@@ -430,18 +423,17 @@ body{
 
 @media (min-width: 767px) and (max-width: 1024px) {
 
-.easy {
+  .easy {
     margin: 200px auto 0 auto;
 }
 
-.norm {
+  .norm {
     margin: 70px auto 0 auto;
 }
 
-.hard {
+  .hard {
     margin: 0 auto 0 auto;
 } 
-
 }
 
 @media (max-width: 800px) {
@@ -457,16 +449,15 @@ body{
 .hard {
     margin: 0 auto 0 auto;
 }  
-
 }
 
 @media (max-width: 765px) {
 
-.header__title {
+  .header__title {
     padding: 0 0 0 0;
 }
 
-.container__card-flip { 
+  .container__card-flip {
     width: 203px;
     height: 360px;
     margin: 0 5px -30px 5px;
@@ -483,7 +474,6 @@ body{
 .hard {
     margin: 10px auto 0 auto;
 }  
-
 }
 
 @media (min-width: 394px) and (max-width: 655px) {
@@ -499,7 +489,6 @@ body{
 .hard {
     margin: 0 auto 0 auto;
 }  
-
 }
 
 @media (min-width: 321px) and (max-width: 393px) {
@@ -525,7 +514,6 @@ body{
 .hard {
     margin: 10px auto 0 auto;
 }
-
 }
 
 @media (max-width: 320px) {
@@ -537,7 +525,7 @@ body{
 .container__card-flip { 
     width: 128px;
     height: 265px;
-    margin:  0  5px  -55px  5px;
+    margin: 0  5px -55px 5px;
  }
  
 .easy {
@@ -551,7 +539,6 @@ body{
 .hard {
     margin: 10px auto 0 auto;
 }  
-
 }
 
 .bug {
