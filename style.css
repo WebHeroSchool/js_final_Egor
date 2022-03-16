@@ -85,7 +85,7 @@ body {
 .header__button {
   text-align: center;
   width: 305px;
-  background-color: #d62B2e;
+  background-color: #d62b2e;
   padding: 26px 56px;
   border-radius: 7px;
   outline: none;
@@ -103,8 +103,7 @@ body {
   .header__button {
     width: 266px;
     padding: 26px 45px;
-}
-
+  }
 }
 
 .header__card {
@@ -510,7 +509,6 @@ body {
 }
 
 @media (max-width: 320px) {
-
   .header__title {
     padding: 0 0 0 0;
 }
