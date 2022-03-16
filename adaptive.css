@@ -2,7 +2,7 @@
   .header__row {
     flex-flow: row nowrap;
     justify-content: flex-start;
-    }
+ }
 }
 
 @media (max-width: 450px) {
@@ -57,7 +57,7 @@
     }
   }
 
-  @media (max-width: 948px) {
+@media (max-width: 948px) {
   .card__1 {
     max-width: 70%;
     position: absolute;
@@ -182,7 +182,7 @@
     }
   }
 
-  .level__easy {
+.level__easy {
   max-width: 100%;
   margin: 0 auto;
   padding: 74px 0 30px  0;

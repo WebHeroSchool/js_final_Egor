@@ -60,6 +60,7 @@ function chooseLevel(min,max){
       const elemInner = document.querySelectorAll(".container__card-inner");
         addAnimation(elemInner);
           reloadGame(elemInner);
+          
           if(max === 3 ){
               elemCards.classList.add("easy");
           } else if(max === 6){
