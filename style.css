@@ -119,7 +119,6 @@ body {
     height: 143px;
     margin: 45px 0 0 0;
   }
-
 }
 
 @media (max-width: 800px) {
@@ -134,16 +133,15 @@ body {
 @media (max-width: 490px) {
   .header__card {
     display: none;
-}
+  }
 
   .header-button {
     align-items: center;
     flex: 0 1 65%;
 }
-
 }
 
-.card__1 {
+  .card__1 {
     max-width: 100%;
     position: absolute;
     top: 25px;
@@ -151,10 +149,10 @@ body {
     transform: rotate(30.26deg);
 }
 
-.card__2 {
-  max-width: 100%;
+  .card__2 {
+    max-width: 100%;
     position: absolute;
-  left: -180px;
+    left: -180px;
     z-index: 1;
 }
 
