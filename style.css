@@ -58,7 +58,6 @@ body {
   .header__row {
     flex-flow: row wrap;
   }
-
 }
 
 .header__level {
@@ -130,8 +129,7 @@ body {
     width: 160px;
     height: 100px;
     margin: 0 0 0 0;
-}
-
+  }
 }
 
 @media (max-width: 490px) {
@@ -149,16 +147,16 @@ body {
 .card__1 {
   max-width: 100%;
     position: absolute;
-    top: 25px;
-    z-index: 2;
-    transform: rotate(30.26deg);
+      top: 25px;
+        z-index: 2;
+         transform: rotate(30.26deg);
 }
 
 .card__2 {
   max-width: 100%;
     position: absolute;
   left: -180px;
-    z-index: 1;
+      z-index: 1;
 }
 
 @media (max-width: 948px) {

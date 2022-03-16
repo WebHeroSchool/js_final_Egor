@@ -7,10 +7,10 @@ const choise = document.querySelector(".header__button");
 
 function addAnimation(elem){
 
-	elem.forEach((elemItem) => {
-		elemItem.addEventListener("click", function() {
+elem.forEach((elemItem) => {
+      elemItem.addEventListener("click", function() {
       elemItem.classList.toggle("flip");
-	});
+    });
 });
 }
 
@@ -27,19 +27,17 @@ function reloadGame(elem) {
              } else {	
                playAgain = true;
              }
-		});
+       });
     });
-	}
-
-
+   }
 
 level.forEach((levelItem) => {
-	levelItem.addEventListener("click", function() {
-		for(let i = 0; i < level.length; i++){
-				level[i].classList.remove("start");
-		}
-		levelItem.classList.toggle("start");
-	});
+     levelItem.addEventListener("click", function() {
+        for(let i = 0; i < level.length; i++){
+             level[i].classList.remove("start");
+      }
+      levelItem.classList.toggle("start");
+   });
 });
      level[0].classList.add("start");
 
@@ -50,15 +48,15 @@ let random =  function(min,max) {
 
 		
 function chooseLevel(item){
-	header.style.display = "none";
-		
-		for(let i = 0; i < item; i++) {
-		let card = elemCard.children[0].cloneNode(true);
-		elemCards.appendChild(card);
-		}
+     header.style.display = "none";
+
+     for(let i = 0; i < item; i++) {
+        let card = elemCard.children[0].cloneNode(true);
+           elemCards.appendChild(card);
+       }
       const elemInner = document.querySelectorAll(".container__card-inner");
-		addAnimation(elemInner);
-		reloadGame(elemInner);
+        addAnimation(elemInner);
+         reloadGame(elemInner);
 
 }
 
