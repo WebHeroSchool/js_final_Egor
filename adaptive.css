@@ -2,7 +2,7 @@
   .header__row {
     flex-flow: row nowrap;
     justify-content: flex-start;
- }
+}
 }
 
 @media (max-width: 450px) {
