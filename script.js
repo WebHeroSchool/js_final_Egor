@@ -43,22 +43,16 @@ level.forEach((levelItem) => {
 });
      level[0].classList.add("start");
 
-let random =  function(min, max) {
-	return  Math.floor(Math.random() * (max - min + 1 ) + min);
+let random =  function(min,max) {
+	return  Math.floor(Math.random() * (max - min + 1) + min);
 };
 
-		
-choise.addEventListener("click", function() {	
-    let number;
-    const countSimple = 3;
-    const countMedium = 6;
-    const countComplicated = 10;
 
-	if(level[0].classList.contains("start")) {
 		
-		header.style.display = "none";
+function chooseLevel(item){
+	header.style.display = "none";
 		
-		for(let i = 0; i < countSimple; i++) {
+		for(let i = 0; i < item; i++) {
 		let card = elemCard.children[0].cloneNode(true);
 		elemCards.appendChild(card);
 		}
@@ -66,54 +60,52 @@ choise.addEventListener("click", function() {
 		addAnimation(elemInner);
 		reloadGame(elemInner);
 
-		elemCards.classList.add("easy");
+}
 
-		let bug = document.querySelectorAll(".container__card-face-back");
-		number = random(1,3);
-		let bugCard = bug[number];
-		bugCard.classList.add("bug");
+function addBug(min,max){
+     let bug = document.querySelectorAll(".container__card-face-back");
 
-	} else if(level[1].classList.contains("start")) {
-		
-		header.style.display = "none";
+      number = random(min,max);
+      let bugCard = bug[number];
+      bugCard.classList.add("bug");
+}
 
-		for(let i = 0; i < countMedium; i++) {
-		let card = elemCard.children[0].cloneNode(true);
-		elemCards.appendChild(card);
-		}
-		const elemInner = document.querySelectorAll(".container__card-inner");
-		addAnimation(elemInner);
-		reloadGame(elemInner);
-		elemCards.classList.add("norm");
+choise.addEventListener("click", function() {
 
-		let bug = document.querySelectorAll(".container__card-face-back");
+    let number;
+    const countSimple = 3;
+    const countMedium = 6;
+    const countComplicated = 10;
 
-		number = random(1,6);
-		let bugCard = bug[number];
-		bugCard.classList.add("bug");
+    if(level[0].classList.contains("start")) {
 
-	} else if(level[2].classList.contains("start")) {
-		
-		header.style.display = "none";
-		
-		for(let i = 0; i < countComplicated; i++) {
-		let card = elemCard.children[0].cloneNode(true);
-		elemCards.appendChild(card);
-		}
-		const elemInner = document.querySelectorAll(".container__card-inner");
-		addAnimation(elemInner);
-		reloadGame(elemInner);
-		elemCards.classList.add("hard");
+       chooseLevel(countSimple);
 
-		let bug = document.querySelectorAll(".container__card-face-back");
+           elemCards.classList.add("easy");
 
-		number = random(1,10);
-		let bugCard = bug[number];
-		bugCard.classList.add("bug");
+             addBug(1,3);
 
-	} else {
-		alert("Choose a level");
-			}
+    } else if(level[1].classList.contains("start")) {
+
+       chooseLevel(countMedium);
+
+           elemCards.classList.add("norm");
+
+             addBug(1,6);
+
+    } else if(level[2].classList.contains("start")) {
+
+       chooseLevel(countComplicated);
+
+          elemCards.classList.add("hard");
+
+           addBug(1,10);
+
+    } else {
+
+       alert("Choose a level");
+
+        }
 });
 
-	
+
