@@ -47,16 +47,26 @@ let random =  function(min,max) {
 
 
 		
-function chooseLevel(item,min,max){
+function chooseLevel(min,max){
+
+     let number;
+     
      header.style.display = "none";
 
-     for(let i = 0; i < item; i++) {
+     for(let i = 0; i < max; i++) {
         let card = elemCard.children[0].cloneNode(true);
            elemCards.appendChild(card);
        }
       const elemInner = document.querySelectorAll(".container__card-inner");
         addAnimation(elemInner);
           reloadGame(elemInner);
+          if(max === 3 ){
+              elemCards.classList.add("easy");
+          } else if(max === 6){
+              elemCards.classList.add("norm");
+          } else if(max === 10) {
+              elemCards.classList.add("hard");
+          }
      
      let bug = document.querySelectorAll(".container__card-face-back");
 
@@ -68,28 +78,17 @@ function chooseLevel(item,min,max){
 
 choise.addEventListener("click", function() {
 
-    let number;
-    const countSimple = 3;
-    const countMedium = 6;
-    const countComplicated = 10;
-
     if(level[0].classList.contains("start")) {
 
-       chooseLevel(countSimple,1,3);
-
-           elemCards.classList.add("easy");
+       chooseLevel(1,3);
 
     } else if(level[1].classList.contains("start")) {
 
-       chooseLevel(countMedium,1,6);
-
-           elemCards.classList.add("norm");
+       chooseLevel(1,6);
 
     } else if(level[2].classList.contains("start")) {
 
-       chooseLevel(countComplicated,1,10);
-
-          elemCards.classList.add("hard");
+       chooseLevel(1,10);
 
     } else {
 
