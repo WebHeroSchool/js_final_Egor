@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+
+<html lang = "en">
+
+<head>
+	<title>Check your sixth sense</title>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<link rel="stylesheet" href="style.css">
+	<link rel="stylesheet" href="adaptive.css">
+	<link rel="stylesheet" href="font.css">
+</head>
+<body>
+	<div class="wrapper">
+		<section class="header">
+			<div class="header__title">
+					<h1 class="header__title-title">Выберите уровень сложности:</h1>
+					<p class="header__title-subtitle">Выберите сложность и игра начнется. Чем выше уровень - тем больше будет выборка карт. </p>
+					<ul class="header__level">
+						<li class="header__level-item">Простой</li>
+						<li class="header__level-item">Средний</li>
+						<li class="header__level-item">Сложный</li>
+					</ul>
+				<div class="header__row">
+					<div class="header-button">
+				<input type="button" value="Начать игру" class="header__button" >
+			      </div>
+				<div class="header__card">
+					<img class="card__1" src="images/Карта1.1.png" alt="Карта">
+					<img class="card__2" src="images/Карта1.1.png" alt="Карта">
+				</div>
+			</div>
+		</div>
+		</section>
+<section class = "container">
+	<div class = "container__card">
+		 <div class = "container__card-flip ">
+			<div class = "container__card-inner">
+				<div class = "card__face container__card-face-front">
+				</div>
+				<div class = "card__face container__card-face-back">
+				</div>
+			</div>
+		  </div>
+	</div>
+     <div class="container__cards"></div>
+</section>
+	<script src="script.js"></script>
+</div>
+	</body>
+	</html>
