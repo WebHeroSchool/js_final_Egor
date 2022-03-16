@@ -1,0 +1,321 @@
+@media (max-width: 900px) {
+  .header__row {
+    flex-flow: row nowrap;
+    justify-content: flex-start;
+    }
+  }
+
+@media (max-width: 450px) {
+  .header__row {
+    flex-flow: row wrap;
+    }
+  }
+
+  @media (max-width: 320px) {
+  .header__button {
+    width: 266px;
+    padding: 26px 45px;
+    }
+  }
+
+  @media (max-width: 490px) {
+  .header__card {
+    display: none;
+  }
+
+  .header-button {
+    align-items: center;
+    flex: 0 1 65%;
+    }
+  }
+
+  @media (max-width: 948px) {
+  .header__card {
+    width: 291px;
+    height: 143px;
+    margin: 45px 0 0 0;
+    }
+  }
+
+@media (max-width: 800px) {
+  .header__card {
+    display: none;
+    width: 160px;
+    height: 100px;
+    margin: 0 0 0 0;
+    }
+  }
+
+@media (max-width: 490px) {
+  .header__card {
+    display: none;
+  }
+
+  .header-button {
+    align-items: center;
+    flex: 0 1 65%;
+    }
+  }
+
+  @media (max-width: 948px) {
+  .card__1 {
+    max-width: 70%;
+    position: absolute;
+    top: 25px;
+    left: -59px;
+    z-index: 2;
+    transform: rotate(30.26deg);
+  }
+
+  .card__2 {
+    max-width: 70%;
+    position: absolute;
+    left: -139px;
+    z-index: 1;
+    }
+  }
+
+@media (max-width: 800px) {
+  .card__1 {
+    max-width: 90%;
+    position: absolute;
+    top: 25px;
+    left: -59px;
+    z-index: 2;
+    transform: rotate(30.26deg);
+  }
+
+  .card__2 {
+    max-width: 90%;
+    position: absolute;
+    left: -91px;
+    z-index: 1;
+    }
+  }
+
+@media (max-width: 700px) {
+  .header-button {
+    flex: 0 1 65%;
+  }
+
+  .card__1 {
+    max-width: 70%;
+  }
+
+  .card__2 {
+    max-width: 70%;
+    }
+  }
+
+@media (max-width: 450px) {
+  .card__1 {
+    max-width: 50%;
+  }
+
+  .card__2 {
+    max-width: 50%;
+  }
+
+  .header {
+    max-width: 87.84%;
+    margin: 0 auto;
+    padding: 30px 0 31px 0;
+    }
+  }
+
+@media (max-width: 350px) {
+  .header__title-title {
+    text-align: center;
+    font-size: 50px;
+  }
+
+  .header__title-subtitle {
+    text-align: center;
+  }
+
+  .header-button {
+    flex: 0 1 50%;
+  }
+
+  .card__1 {
+    left: -19px;
+  }
+
+  .card__2 {
+    left: -51px;
+    }
+  }
+
+  @media (min-width: 350px) and (max-width: 490px) {
+  .header__level {
+    margin-left: 35px;
+    font-size: 25px;
+  }
+
+  .start::before {
+    content: '';
+    position: absolute;
+    width: 26px;
+    height: 26px;
+    top: 10px;
+    left: -33px;
+    cursor: pointer;
+    background: url('images/Rectangle 2.png') no-repeat top center;
+    }
+  }
+
+@media (max-width: 948px) {
+  .start::before {
+    top: 10px;
+    }
+  }
+
+@media (min-width: 800px) and (max-width: 948px) {
+  .start::before {
+    top: 10px;
+    }
+  }
+
+@media (max-width: 798px) {
+  .start::before {
+    top: 10px;
+    }
+  }
+
+  .level__easy {
+    max-width: 100%;
+    margin: 0 auto;
+    padding: 74px 0 30px  0;
+  }
+
+@media (max-width: 600px) {
+  .level__easy {
+    padding: 30px 0 30px  0;
+    }
+  }
+
+@media (max-width: 700px) {
+  .level__easy {
+    padding: 30px 0 30px  0;
+    }
+  }
+
+@media (max-width: 899px) {
+  .level__easy {
+    padding: 55px 0 30px  0;
+    }
+  }
+
+  @media (min-width: 767px) and (max-width: 1024px) {
+  .easy {
+    margin: 200px auto 0 auto;
+  }
+
+  .norm {
+    margin: 70px auto 0 auto;
+  }
+
+  .hard {
+    margin: 0 auto 0 auto;
+    }
+  }
+
+@media (max-width: 800px) {
+  .easy {
+    margin: 300px auto 0 auto;
+  }
+
+  .norm {
+    margin: 130px auto 0 auto;
+  }
+
+  .hard {
+    margin: 0 auto 0 auto;
+    }
+  }
+
+@media (max-width: 765px) {
+  .header__title {
+    padding: 0 0 0 0;
+  }
+
+  .container__card-flip {
+    width: 203px;
+    height: 360px;
+    margin: 0 5px -30px 5px;
+  }
+
+  .easy {
+    margin: 200px auto 0 auto;
+  }
+
+  .norm {
+    margin: 130px auto 0 auto;
+  }
+
+  .hard {
+    margin: 10px auto 0 auto;
+    }
+  }
+
+@media (min-width: 394px) and (max-width: 655px) {
+  .easy {
+    margin: 20px auto 0 auto;
+  }
+
+  .norm {
+    margin: 10px auto 0 auto;
+  }
+
+  .hard {
+    margin: 0 auto 0 auto;
+    }
+  }
+
+@media (min-width: 321px) and (max-width: 393px) {
+  .header__title {
+    padding: 0 0 0 0;
+  }
+
+  .container__card-flip {
+    width: 209px;
+    height: 360px;
+    margin: 0 5px -15px 5px;
+  }
+
+  .easy {
+    margin: 10px auto 0 auto;
+  }
+
+  .norm {
+    margin: 10px auto 0 auto;
+  }
+
+  .hard {
+    margin: 10px auto 0 auto;
+    }
+  }
+
+@media (max-width: 320px) {
+  .header__title {
+    padding: 0 0 0 0;
+  }
+
+  .container__card-flip {
+    width: 128px;
+    height: 265px;
+    margin: 0  5px -55px 5px;
+  }
+
+  .easy {
+    margin: 10px auto 0 auto;
+  }
+
+  .norm {
+    margin: 10px auto 0 auto;
+  }
+
+  .hard {
+    margin: 10px auto 0 auto;
+    }
+  }
